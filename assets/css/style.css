@@ -515,11 +515,17 @@ button { font-family: inherit; }
   .footer__bottom { flex-direction: column; }
 
   .wafloat { display: none; }
-  .mbar { display: grid; grid-template-columns: repeat(3, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 1045; background: #fff; border-top: 2px solid var(--ink); padding-bottom: env(safe-area-inset-bottom); }
-  .mbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem; min-height: 64px; font-family: var(--display); font-weight: 600; font-size: .86rem; color: var(--ink); }
+  .mbar { display: grid; grid-template-columns: repeat(3, 1fr); position: fixed; left: 0; right: 0; bottom: 8px; z-index: 1045;  padding-bottom: env(safe-area-inset-bottom);gap: 5px; }
+  .mbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem; min-height: 48px; font-family: var(--display); font-weight: 600; font-size: .86rem; color: var(--ink);        border-radius: 25px;
+        border: 2px solid black;background-color:#fff; }
   .mbar i { font-size: 1.25rem; }
-  .mbar__wa { background: var(--wa); color: #fff !important; }
-  .mbar__enrol { background: var(--sun); }
+  .mbar__wa { background: var(--wa) !important; color: #fff !important; }
+  .mbar__enrol { background: var(--sun) !important; }
+  .topbar__list {
+    font-size: 12px;
+        gap: .3rem 0.7rem;
+
+  }
 }
 
 @media (max-width: 420px) {
