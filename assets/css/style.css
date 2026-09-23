@@ -515,9 +515,10 @@ button { font-family: inherit; }
   .footer__bottom { flex-direction: column; }
 
   .wafloat { display: none; }
-  .mbar { display: grid; grid-template-columns: repeat(3, 1fr); position: fixed; left: 0; right: 0; bottom: 8px; z-index: 1045;  padding-bottom: env(safe-area-inset-bottom);gap: 5px; }
-  .mbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem; min-height: 48px; font-family: var(--display); font-weight: 600; font-size: .86rem; color: var(--ink);        border-radius: 25px;
-        border: 2px solid black;background-color:#fff; }
+  .mbar { display: grid;  position: fixed; right: 8px; bottom: 8px; z-index: 1045;  padding-bottom: env(safe-area-inset-bottom);gap: 5px; }
+  .mbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem; min-height: 48px; font-family: var(--display); font-weight: 600; font-size: .86rem; color: var(--ink);        border-radius: 48px;
+        border: 2px solid black;background-color:#fff;        height: 60px;
+        width: 60px; }
   .mbar i { font-size: 1.25rem; }
   .mbar__wa { background: var(--wa) !important; color: #fff !important; }
   .mbar__enrol { background: var(--sun) !important; }
@@ -525,6 +526,9 @@ button { font-family: inherit; }
     font-size: 12px;
         gap: .3rem 0.7rem;
 
+  }
+  .hero__trust li {
+        font-size: .85rem;
   }
 }
 
